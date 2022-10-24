@@ -1,11 +1,70 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 // 1 -  Faça uma função que recebe uma certa medida e ajusta ela percentualmente 
 // entre dois valores mínimo e máximo e retorna esse valor
 
+
+int main(){
+
+	
+
+	int porcentagem(){
+
+		int valor, maximo, minimo, calculo;
+		
+		printf("Digite um valor minimo: ")
+		scanf(%d, minimo)
+		printf("Digite um valor maximo: ")
+		scanf(%d, maximo)
+		printf("Digite um valor: ")
+		scanf(%d, valor)
+		calculo = 0;
+		calculo = valor*100/(maximo-minimo)
+
+	}
+	/*
+	int porcentagem(){
+		cout << "Digite um valor: \n";
+		cin >> valor;
+		cout <<" Digite um valor minimo: \n";
+		cin >> minimo;
+		cout << "Digite um valor maximo: \n";
+		cin >> maximo;
+	
+		calculo = 100*valor/(maximo - minimo);
+
+		printf ("Esse valor representa %.2f%% do intervalo informado. ", calculo);
+
+	
+	}*/
+
+	return 0;
+	
+
+}
+
+
+
 // 2 - Faça uma função que simule a leitura de um sensor lendo o 
 // valor do teclado ao final a função retorna este valor
+
+char letra;
+
+int sensor(){
+
+	letra = scanf("Lendo um valor do teclado...");
+	printf("A tecla %c foi precionada", letra);
+
+	return 0;
+
+}
+
+
+
+
 
 // 3 - Faça uma função que armazena uma medida inteira qualquer 
 // em um vetor fornecido. Note que como C não possui vetores 
@@ -43,6 +102,7 @@
 // enviado pelo usuário. 
 //
 //      Complete a função com a chamada das funções já criadas
+/*
 int dirige(int *v,int maxv){
 	int maxVetor = maxv;
 	int *vetorMov = v;
@@ -85,3 +145,4 @@ int main(int argc, char** argv) {
 	
 	return 0;
 }
+*/
