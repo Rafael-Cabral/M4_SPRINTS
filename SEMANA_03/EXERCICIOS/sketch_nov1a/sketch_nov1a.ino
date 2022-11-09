@@ -1,5 +1,4 @@
 #include <string> 
-#include <LiquidCrystal_I2C.h>
 
 #define LED_BRANCO 9
 #define LED_VERDE 8
@@ -12,7 +11,6 @@
 
 
 int ldrValue = 0;
-LiquidCrystal_I2C lcd(0x27, 16, 2);
 
 
 void setup() {
@@ -26,10 +24,6 @@ void setup() {
   pinMode(BUZZER, OUTPUT);
   pinMode(SAVE_BUTTON, INPUT_PULLUP);
   pinMode(PLAY_BUTTON, INPUT_PULLUP);
-  Wire.begin(8, 9);
-  lcd.init();
-  lcd.backlight();
-  lcd.setCursor(1, 0);
 }
 
 int value = 0;
@@ -87,13 +81,6 @@ void tocar() {
     vetoresSalvos[t] = 0;
   }
   x = 0;
-}
-
-void display(int digito) {
-
-  lcd.print(std::string header(divisao, 4);)
-  delay(500);
-
 }
 
 
